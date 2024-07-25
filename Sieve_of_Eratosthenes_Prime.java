@@ -9,7 +9,7 @@ public class Sieve_of_Eratosthenes_Prime {
         for (int i = 2; i*i < n; i++) {
             if (!prime[i]){
                 for (int j = i*2; j <= n ; j+=i) {
-                    prime[i] = true;
+                    prime[j] = true;
                     
                 }
             }
